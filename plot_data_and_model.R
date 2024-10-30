@@ -33,3 +33,7 @@ ggplot(aes(t,N), data = growth_data) +
   geom_point() +
   scale_y_continuous(trans='log10')
 
+#Making a list of packages needed
+sink(file = "package-versions.txt")
+sessionInfo()
+sink()
